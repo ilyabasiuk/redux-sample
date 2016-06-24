@@ -1,3 +1,4 @@
+import songs from '../fixtures.json'
 // ------------------------------------
 // Constants
 // ------------------------------------
@@ -47,7 +48,7 @@ const ACTION_HANDLERS = {
 // ------------------------------------
 // Reducer
 // ------------------------------------
-const initialState = 0
+const initialState = songs
 export default function counterReducer (state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type]
 

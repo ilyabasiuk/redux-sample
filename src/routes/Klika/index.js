@@ -9,16 +9,16 @@ export default (store) => ({
         require.ensure([], (require) => {
             /*  Webpack - use require callback to define
              dependencies for bundling   */
-            const Counter = require('./containers/CounterContainer').default
-            const reducer = require('./modules/counter').default
+            const Counter = require('./containers/KlikaContainer').default
+            const reducer = require('./modules/klika').default
 
             /*  Add the reducer to the store on key 'counter'  */
-            injectReducer(store, { key: 'counter', reducer })
+            injectReducer(store, { key: 'songs', reducer })
 
             /*  Return getComponent   */
             cb(null, Counter)
 
             /* Webpack named bundle   */
-        }, 'counter')
+        }, 'klika')
     }
 })

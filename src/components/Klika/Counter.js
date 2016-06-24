@@ -5,9 +5,19 @@ class Counter extends React.Component {
 
     render () {
         const props = this.props
-        return (<div>
-           "Hi, Klika
-        </div>)
+        return (
+            <table>
+                <thead>
+                <tr>
+                    <th>Исполнитель</th>
+                    <th>Песня</th>
+                    <th>Жанр</th>
+                    <th>Год</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        )
     }
 
 }
